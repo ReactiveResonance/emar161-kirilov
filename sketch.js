@@ -1067,6 +1067,15 @@ function Battle() {
     print('GAME OVER');
     print('Try as you might, you could not overcome this obstacle,');
     print('perhaps in another life.');
+    battleMus.stop();
+    push();
+    fill(128, 0, 0, 100);
+    rect(0, 0, width, height);
+    textAlign(CENTER);
+    textSize(32);
+    fill('lightBlue');
+    text("GAME OVER", width / 2, height / 2);
+    pop();
     noLoop();
   }
   
@@ -1074,6 +1083,15 @@ function Battle() {
     print('VICTORY!');
     print('The evil game show host has been defeated and you are one step closer now');
     print('TO BE CONTINUED... in another game')
+    battleMus.stop();
+    push();
+    fill(128, 0, 0, 100);
+    rect(0, 0, width, height);
+    textAlign(CENTER);
+    textSize(32);
+    fill('lightBlue');
+    text("VICTORY!", width / 2, height / 2);
+    pop();
     noLoop();
   }
   
